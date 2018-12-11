@@ -1,3 +1,3 @@
 import os
 
-os.execl('')
+os.execl('uwsgi --http 0.0.0.0:8080 --wsgi-file server.py --callable __hug_wsgi__')
